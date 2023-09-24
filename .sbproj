@@ -1,0 +1,34 @@
+{
+  "Title": "SCP-294 The Coffee Machine",
+  "Type": "addon",
+  "Org": "bimbasic",
+  "Ident": "ent_scp_294",
+  "Tags": "runtime entity scp drink",
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "Resources": "/fonts/*",
+  "MenuResources": null,
+  "HasCode": true,
+  "CodePath": "/code/",
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "Metadata": {
+    "CsProjName": "",
+    "PrimaryAsset": "Scp294",
+    "PhysicsMins": "-1,-1,-1",
+    "PhysicsMaxs": "1,1,1",
+    "RenderMins": "-1,-1,-1",
+    "RenderMaxs": "-1,-1,-1",
+    "ParentPackage": "facepunch.sandbox",
+    "Compiler": {
+      "RootNamespace": "Sandbox",
+      "DefineConstants": "SANDBOX;ADDON;",
+      "NoWarn": "1701;1702;1591;",
+      "WarningsAsErrors": "",
+      "References": [],
+      "IgnoreFolders": [],
+      "DistinctReferences": []
+    }
+  }
+}

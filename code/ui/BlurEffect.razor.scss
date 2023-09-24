@@ -1,0 +1,19 @@
+BlurEffect
+{
+    pointer-events: none;
+    justify-content: center;
+	align-items: center;
+}
+
+.active
+{
+    pointer-events: all;
+    justify-content: center;
+	align-items: center;
+    height: 710px;
+    width: 1200px;
+    left: 360px;
+    font-size: 30;
+    background-color: rgb(100, 100, 100);
+    padding: 2px;
+}

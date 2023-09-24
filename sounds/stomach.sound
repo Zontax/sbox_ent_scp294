@@ -1,0 +1,12 @@
+{
+  "UI": true,
+  "Volume": "0.74,0.74,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 85,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/stomach.vsnd"
+  ],
+  "MaximumDistance": 1671.5345,
+  "MinimumDistance": 83.57673
+}

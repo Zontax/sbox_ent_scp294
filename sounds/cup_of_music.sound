@@ -1,0 +1,13 @@
+{
+  "UI": true,
+  "Volume": "0.62,0.62,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 30,
+  "SelectionMode": "Random",
+  "Sounds": [
+    "sounds/a cybers world.vsnd",
+    "sounds/bluebird-of-misfortune.vsnd"
+  ],
+  "MaximumDistance": 236.23267,
+  "MinimumDistance": 11.811633
+}

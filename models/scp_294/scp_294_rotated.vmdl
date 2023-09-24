@@ -1,0 +1,176 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "GenericGameData"
+						game_class = "prop_data"
+						game_keys = 
+						{
+							bakelighting = true
+							health = -1.0
+							min_impact_damage_speed = -1.0
+							impact_damage = -1.0
+							parent_bodygroup_name = ""
+							parent_bodygroup_value = 0
+						}
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						name = "default"
+						remaps = 
+						[
+							{
+								from = "models/scp_294/scp_294.vmat"
+								to = ""
+							},
+						]
+						use_global_default = true
+						global_default_material = "models/scp_294/scp_294.vmat"
+					},
+					{
+						_class = "MaterialGroup"
+						name = "skin1"
+						remaps = 
+						[
+							{
+								from = "models/scp_294/scp_294.vmat"
+								to = "models/scp_294/scp_294_skin1.vmat"
+							},
+						]
+					},
+					{
+						_class = "MaterialGroup"
+						name = "skin2"
+						remaps = 
+						[
+							{
+								from = "models/scp_294/scp_294.vmat"
+								to = "models/scp_294/scp_294_old.vmat"
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsShapeBox"
+						name = "bottom"
+						parent_bone = ""
+						surface_prop = "metal"
+						collision_tags = "solid"
+						origin = [ 0.202326, 0.566477, 13.961552 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 40.280014, 43.461716, 27.897602 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						name = "left"
+						parent_bone = ""
+						surface_prop = "metal"
+						collision_tags = "solid"
+						origin = [ -1.150689, 18.702957, 37.611923 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 37.510139, 7.080172, 19.584608 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						name = "right"
+						parent_bone = ""
+						surface_prop = "metal"
+						collision_tags = "solid"
+						origin = [ -1.184587, -6.832207, 37.611923 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 37.517639, 28.67931, 19.584608 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						name = "bottom2"
+						parent_bone = ""
+						surface_prop = "metal"
+						collision_tags = "solid"
+						origin = [ -1.151583, 11.645649, 42.668903 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 37.483078, 9.518707, 9.167572 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						name = "top"
+						parent_bone = ""
+						surface_prop = "metal"
+						collision_tags = "solid"
+						origin = [ -1.402009, 0.542059, 62.846745 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 37.948009, 43.449482, 31.54804 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						name = "back"
+						parent_bone = ""
+						surface_prop = "metal"
+						collision_tags = "solid"
+						origin = [ 2.044917, 11.35748, 33.678539 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 31.045872, 7.751181, 11.493608 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						name = "front"
+						parent_bone = ""
+						surface_prop = "metal"
+						collision_tags = "solid"
+						origin = [ -19.355591, 11.190239, 37.184235 ]
+						angles = [ 0.0, -7.0, 0.0 ]
+						dimensions = [ 1.275843, 8.908815, 3.371679 ]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "scp_294"
+						filename = "models/scp_294/scp_294.fbx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 0.12
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "BoundsMin"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = true
+							exception_list = 
+							[
+								"scp_294",
+							]
+						}
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		base_model_name = ""
+	}
+}

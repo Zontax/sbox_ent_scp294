@@ -1,0 +1,122 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+@using System;
+@using Bimbasic;
+@attribute [StyleSheet];
+
+<root>
+	@if(isOpen)
+	{
+		<div class="active">
+			<Button @onclick=@(ClosePanel) class="exit-btn">X</Button>
+			<div class="langs">en ru uk</div>
+			<div class="title-panel">@("Coffee Machine".ToUpper())</div>
+			<TextEntry onchange=@(()=> Button("")) onsubmit=@(SetDrinkName) Value:bind=@(inputName)></TextEntry>
+
+			<div class="buttons1">
+				@foreach(var btn in buttons1)
+				{
+					<button @onclick=@(()=> Button(btn)) class="btn">@(btn)</button>
+				}
+			</div>
+
+			<div class="buttons2">
+				@foreach(string btn in buttons2)
+				{
+					<button @onclick=@(()=> Button(btn)) class="btn">@(btn)</button>
+				}
+			</div>
+
+			<div class="buttons3">
+				@foreach(string btn in buttons3)
+				{
+					if (btn == "➥") 
+					{
+						<button @onclick=@(()=> Button(btn)) class="btn-enter">
+							@(btn)</button>
+					}
+					else
+					{
+						<button @onclick=@(()=> Button(btn)) class="btn">
+							@(btn)</button>
+					}
+				}
+			</div>
+
+			<div class="buttons4">
+				@foreach(string btn in buttons4)
+				{
+					<button @onclick=@(()=> Button(btn)) class="btn">@(btn)</button>
+				} 
+			</div>
+			
+			<button @onclick=@(()=> Button(" ")) class="button-space"></button>
+
+			@* <SliderControl Value:bind="@(floatValue)" Step="@(0.05f)" Max="@(1f)"></SliderControl> *@
+		</div>
+	}
+</root>
+
+@code
+{
+	public Scp294 scp;
+	bool isStart = true;
+	public bool isOpen = true;
+	public string inputName;
+	string[] buttons1 = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0"};
+	string[] buttons2 = {"Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"};
+	string[] buttons3 = {"A", "S", "D", "F", "G", "H", "J", "K", "L", "➥"};
+	string[] buttons4 = {"Z", "X", "C", "V", "B", "N", "M", "-", " ", "⟵"};
+
+	void ClosePanel()
+	{
+		scp.DeletePanel();
+		scp.SpawnPanel(inputName);
+		scp.DeleteKeyboard();
+	}
+
+	void SetDrinkName()
+	{
+		inputName = inputName.Trim().ToLower();
+		
+		if (inputName != "") Scp294Console.SetDrinkName(scp.Name, inputName);
+		scp.DeleteKeyboard();
+	}
+
+	void Button(string button = "")
+	{
+		if (inputName.Length < 55)
+		{
+			if (button == "⟵")
+			{
+				if (inputName.Length > 0) inputName = inputName.Substring(0, inputName.Length - 1);
+			}
+			else if (button == "➥")
+			{
+				SetDrinkName();
+			}
+			else
+			{
+				inputName += button.ToUpper();
+			}
+		}
+
+		scp.DeletePanel();
+		scp.SpawnPanel(inputName);
+	}
+
+	public override void Tick()
+	{
+		if (isStart)
+		{
+			scp.DeletePanel();
+			scp.SpawnPanel(inputName);
+			isStart = false;
+		}
+	}
+
+	protected override int BuildHash()
+	{
+		return HashCode.Combine(isOpen);
+	}
+}

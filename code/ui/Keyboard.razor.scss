@@ -1,0 +1,146 @@
+Keyboard
+{
+    pointer-events: none;
+    justify-content: center;
+	align-items: center;
+}
+
+.active
+{
+    pointer-events: all;
+    justify-content: center;
+	align-items: center;
+    height: 710px;
+    width: 1200px;
+    left: 360px;
+    font-size: 30;
+    background-color: rgb(100, 100, 100);
+    padding: 2px;
+}
+
+.exit-btn
+{
+    position: absolute;
+    justify-content: center;
+	align-items: center;
+    top: 10px; right: 10px;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(46, 46, 46);
+    border-color: black;
+    border: 2px;
+    font-size: 50px;
+}
+
+.exit-btn:hover
+{
+    background-color: rgb(194, 0, 0);
+}
+
+.title-panel
+{
+    position: absolute;
+    top: 3px;
+    font-size:50;
+}
+
+.langs
+{
+    position: absolute;
+    justify-content: center;
+	align-items: center;
+    top: 2px; left: 8px;
+    color:white;
+    font-size: 40px;
+}
+
+.TextEntry
+{
+    position: absolute;
+	color: white;
+	background-color: #111;
+    width: 700px;
+    //height: 100px;
+    top: 70px;
+    font-size:40;
+}
+
+.btn-enter
+{
+    justify-content: center;
+	align-items: center;
+    background-color: rgb(0, 160, 19);
+    color: white;
+    border-color: black;
+    border: 2px;
+    width: 95px;
+    height: 95px;
+    margin: 5px;
+    font-size: 70px;
+}
+.btn-enter:hover
+{
+    background: rgb(0, 210, 0);
+}
+
+.btn
+{
+    justify-content: center;
+	align-items: center;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border-color: black;
+    border: 2px;
+    width: 95px;
+    height: 95px;
+    margin: 5px;
+    font-size: 70px;
+}
+.btn:hover
+{
+    background-color: rgb(90, 90, 90);
+}
+
+.button-space
+{
+    position: absolute;
+    justify-content: center;
+	align-items: center;
+    top: 590px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border-color: black;
+    border: 2px;
+    width: 1075px;
+    height: 95px;
+    margin: 5px;
+    font-size: 70px;
+}
+.button-space:hover
+{
+    background-color: rgb(90, 90, 90);
+}
+
+.buttons1
+{
+    position: absolute;
+    top: 150px;
+}
+
+.buttons2
+{
+    position: absolute;
+    top: 260px;
+}
+
+.buttons3
+{
+    position: absolute;
+    top: 370px;
+}
+
+.buttons4
+{
+    position: absolute;
+    top: 480px;
+}

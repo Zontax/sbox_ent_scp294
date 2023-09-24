@@ -1,0 +1,12 @@
+{
+  "UI": true,
+  "Volume": "0.00,0.00,0",
+  "Pitch": "1.00,1.00,0",
+  "Decibels": 50,
+  "SelectionMode": "Random",
+  "Sounds": [
+    null
+  ],
+  "MaximumDistance": 599.31305,
+  "MinimumDistance": 29.965652
+}
