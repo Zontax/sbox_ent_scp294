@@ -8,11 +8,13 @@ public partial class Scp294Console : Entity
     [ConCmd.Server("set_drink")]
     public static void SetDrinkName(string scpName, string drinkName)
     {
-        var scp = Entity.All.OfType<Scp294>().Where(scp => scp.Name == scpName).ToList().FirstOrDefault();
-        if (scp != null) scp.FindingName = drinkName;
-        scp?.UseLogic();
-        scp?.DeletePanel();
-        scp?.SpawnPanel(scp.FindingName);
+        var scp = All.OfType<Scp294>().Where(scp => scp.Name == scpName).FirstOrDefault();
+        if (scp == null) return;
+
+        scp.FindingName = drinkName;
+        scp.UseLogic();
+        scp.DeletePanel();
+        scp.SpawnPanel(scp.FindingName);
     }
 
     [ClientRpc]

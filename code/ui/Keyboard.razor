@@ -8,8 +8,8 @@
 	@if(isOpen)
 	{
 		<div class="active">
-			<Button @onclick=@(ClosePanel) class="exit-btn">X</Button>
-			<div class="langs">en ru uk</div>
+			<Button @onclick=@(ClosePanel) class="exit-btn">✖️</Button>
+			<div class="langs">EN  RU  UK</div>
 			<div class="title-panel">@("Coffee Machine".ToUpper())</div>
 			<TextEntry onchange=@(()=> Button("")) onsubmit=@(SetDrinkName) Value:bind=@(inputName)></TextEntry>
 

@@ -4,46 +4,46 @@ namespace Bimbasic;
 
 public partial class Drink : Prop, IUse
 {
-    BlurEffect clientBlur;
+    // BlurEffect? clientBlur;
     [Net, Predicted] public Cup cup { get; set; }
     [Net, Predicted] public TimeSince explosionMillis { get; set; }
     [Net, Predicted] Sound soundDrink { get; set; }
     [Net, Predicted] Sound soundStomach { get; set; }
-    public string name = "Drink";
-    public string nameRu = "Drink";
-    public string nameUk = "Drink";
+    public string name = "Water";
+    public string nameRu = string.Empty;
+    public string nameUk = string.Empty;
     public int r = 0;
     public int g = 0;
     public int b = 0;
     public float alpha = 1;
     public bool glow;
-    public string message = "";
-    public string messageRu = "";
-    public string messageUk = "";
+    public string message = string.Empty;
+    public string messageRu = string.Empty;
+    public string messageUk = string.Empty;
     public bool refuse;
-    public string refuseMessage = "";
-    public string refuseMessageRu = "";
-    public string refuseMessageUk = "";
+    public string refuseMessage = string.Empty;
+    public string refuseMessageRu = string.Empty;
+    public string refuseMessageUk = string.Empty;
     public bool lethal;
-    public float deathTime = 0;
-    public string deathMessage = "";
-    public string deathMessageRu = "";
-    public string deathMessageUk = "";
+    public float deathTime;
+    public string deathMessage = string.Empty;
+    public string deathMessageRu = string.Empty;
+    public string deathMessageUk = string.Empty;
     public bool explosion;
     public bool explosionNow;
     public bool stomachAche;
-    public int blur = 0;
+    public int blur;
     public bool heal;
-    public float damage = 0;
+    public float damage;
     public bool godmode;
     public bool vomit;
-    public string sound = "";
+    public string sound = string.Empty;
 
-    public float explosionTime = 0;
-    public int explosionDamage { get; set; } = 150;
-    public int explosionRadius { get; set; } = 120;
-    public float explosionForce { get; set; } = 7f;
-    public string explosionSound { get; set; } = "explosion";
+    public float explosionTime;
+    public int explosionDamage = 150;
+    public int explosionRadius = 220;
+    public float explosionForce = 8f;
+    public string explosionSound = "explosion";
 
     public override void Spawn()
     {

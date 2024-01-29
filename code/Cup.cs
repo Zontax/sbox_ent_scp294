@@ -4,8 +4,7 @@ namespace Bimbasic;
 
 public partial class Cup : Prop, IUse
 {
-    public Drink drink;
-    int destroyTime = 3;
+    public Drink? drink;
 
     public override void Spawn()
     {

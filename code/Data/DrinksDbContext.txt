@@ -1,0 +1,14 @@
+﻿// using Microsoft.EntityFrameworkCore;
+using Bimbasic.Models;
+
+namespace Bimbasic.Data;
+
+public class DrinksDbContext : DbContext
+{
+     public DbSet<DrinkData> Drinks { get; set; }
+
+     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+     {
+         optionsBuilder.UseSqlite("Data Source=scp294data.db");
+     }
+}

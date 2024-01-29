@@ -3,7 +3,7 @@
   "Type": "addon",
   "Org": "bimbasic",
   "Ident": "ent_scp_294",
-  "Tags": "runtime entity scp drink",
+  "Tags": "runtime entity scp drink 1",
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
@@ -26,9 +26,11 @@
       "DefineConstants": "SANDBOX;ADDON;",
       "NoWarn": "1701;1702;1591;",
       "WarningsAsErrors": "",
-      "References": [],
+      "Nullables": true,
+      "ReleaseMode": "Release",
+      "AssemblyReferences": [],
       "IgnoreFolders": [],
-      "DistinctReferences": []
+      "DistinctAssemblyReferences": []
     }
   }
 }

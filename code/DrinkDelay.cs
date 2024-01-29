@@ -6,9 +6,9 @@ public partial class DrinkDelay : Entity
 {
     [Net, Predicted] public TimeSince deathMillis { get; set; }
     [Net, Predicted] public Entity player { get; set; }
-    public string deathMessage;
-    public string deathMessageRu;
-    public string deathMessageUk;
+    public string deathMessage = string.Empty;
+    public string deathMessageRu = string.Empty;
+    public string deathMessageUk = string.Empty;
     public bool lethal;
     public float deathTime;
     public bool onDeath;

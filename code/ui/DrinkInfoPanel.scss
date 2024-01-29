@@ -1,13 +1,10 @@
-DrinkInfoPanel 
-{
+DrinkInfoPanel {
     //transform: scaleX(-1);
-    //transform-origin: center;
-    //background-image: linear-gradient(to bottom, rgb(17, 61, 18), rgb(16, 91, 30));
-    background-image: url(img/drink_panel.png);
-    background-size: 140px 27px;
-    background-repeat: no-repeat;
+    //background-image: url(img/drink_panel.png);
+    //background-size: 140px 27px;
+    //background-repeat: no-repeat;
     justify-content: center;
-	align-items: center;
+    align-items: center;
     padding-left: 14px;
     padding-right: 12px;
     width: 100px;
@@ -15,15 +12,16 @@ DrinkInfoPanel
     transition: all .15s ease;
 }
 
-.drink 
-{   
+.drink {
+    display: flex;
+    padding: 3.5px;
+    transform-origin: center;
     text-overflow: ellipsis;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    //font-family: better_vcr;
-    font-size: 11.2;
+    font-size: 11.2px;
     font-weight: bolder;
-    color: rgb(234, 232, 209);
+    color: rgb(255, 255, 255);
 }
